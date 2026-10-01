@@ -3,14 +3,19 @@
      <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopify portfolio~Josh_dev3</title>
+        <title>Josh_dev3~Shopify Portfolio</title>
          <style>
          
           body {
               font-family: "Sofia Pro", sans-serif;
-              background: hsl(0, 0%, 80%);
+              background: hsl(210, 50%, 92%);
               margin: 0;
               position: relative;
+          }
+          
+          .secsec {
+              background: hsl(0, 0%, 80%);
+              margin-top: -40px;
           }
           
           body.menu-open {
@@ -1078,7 +1083,7 @@
           </header>
           
           <nav id="menusection">
-           <a href="555" id="close"> <div class="ccc">
+           <a href="#" id="close"> <div class="ccc">
            <div class="exx1">
            </div>
            <div class="exx2">
@@ -1124,6 +1129,7 @@
            <a class="link1" href="ttt"><div class="link1square">Shop all</div></a>
           </div>
           
+          <section class="secsec">
           <section class="secondsec">
            <h1 class="firsth1"> About us</h1>
            <p class="secondp">Welcome to <span style="font-weight: bold;">Josh_dev3’s Store,</span> your trusted destination for quality products, great value, and exceptional customer service. We are committed to providing our customers with carefully selected items that combine style, reliability, and affordability all in one place.</p>
@@ -1261,7 +1267,7 @@
           <br>
           <br>
           <br>
-          
+          </section>
           
           
           
@@ -1284,7 +1290,8 @@
            });
            });
            
-           close.addEventListener("click", function () {
+           close.addEventListener("click", function (e) {
+           e.preventDefault();
            menusection.classList.remove("show");  
            document.body.classList.remove("menu-open");
            });
@@ -1348,5 +1355,4 @@
            
           </script>
       </body>
-    </html>
   
